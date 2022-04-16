@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="567.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.controllers.controllers.UserWindowController">
+    <children>
+        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="25.0" prefHeight="25.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+                <GridPane prefHeight="475.0" prefWidth="547.0" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.vgrow="SOMETIMES">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                  <Button fx:id="buttonBack" mnemonicParsing="false" prefHeight="16.0" prefWidth="110.0" text="⬅ Nazad " GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                        <Label text="Ime:" GridPane.halignment="RIGHT">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                        </Label>
+                        <Label text="Prezime:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                        </Label>
+                        <Label text="Broj telefona:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                        </Label>
+                        <Label text="Spol:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                        </Label>
+                        <TextField fx:id="nameTextField" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                        <TextField fx:id="surnameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                        <TextField fx:id="phoneNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                        <TextField fx:id="emailTextField" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                        <Label text="Email adresa:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                        </Label>
+                        <Label text="Datum rođenja:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                            <GridPane.margin>
+                                <Insets right="10.0" />
+                            </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                        </Label>
+                        <DatePicker fx:id="birthDatePicker" style="-fx-font-size: 14;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <GridPane GridPane.columnSpan="3" GridPane.rowIndex="9">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="buttonAdd" mnemonicParsing="false" text="Napravi članarinu" GridPane.halignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="updateUserInDatabase" mnemonicParsing="false" text="Spremi" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="buttonRemove" mnemonicParsing="false" text="Obriši korisnika" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </GridPane>
+                  <TableView fx:id="subscriptionsTableView" prefHeight="59.0" prefWidth="117.0" GridPane.columnSpan="3" GridPane.rowIndex="6" GridPane.rowSpan="3">
+                    <columns>
+                      <TableColumn fx:id="usersStartColumn" prefWidth="131.0" style="-fx-alignment: CENTER; -fx-font-size: 14;" text="Početak članarine" />
+                      <TableColumn fx:id="usersEndColumn" minWidth="0.0" prefWidth="131.0" style="-fx-alignment: CENTER; -fx-font-size: 14;" text="Kraj članarine" />
+                        <TableColumn fx:id="usersTypeColumn" prefWidth="139.0" style="-fx-alignment: CENTER; -fx-font-size: 14;" text="Tip članarine" />
+                        <TableColumn fx:id="usersPauseColumn" prefWidth="106.0" style="-fx-alignment: CENTER; -fx-font-size: 14;" text="Pauza" />
+                        <TableColumn fx:id="usersFrozenDaysColumn" prefWidth="139.0" style="-fx-alignment: CENTER; -fx-font-size: 14;" text="Duljina pauze" />
+                        <TableColumn fx:id="usersStatusColumn" prefWidth="106.0" style="-fx-alignment: CENTER; -fx-font-size: 14;" text="Status" />
+                        <TableColumn fx:id="usersDateofCreation" prefWidth="106.0" style="-fx-alignment: CENTER; -fx-font-size: 14;" text="Datum početka pauze" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <ComboBox fx:id="genderComboBox" prefHeight="26.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+                    </children>
+                </GridPane>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
